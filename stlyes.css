@@ -2,20 +2,28 @@
   font-family: 'roboto', sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
 }
 
-.container {
+.box {
   background-color: #FFFFFF;
   width: 798px;
-  height: 574px;
   border-radius: 5px;
+  padding-left: 27px;
+}
+
+.brownie-container {
+  margin-top: 24px;
   padding: 20px 26px 12px 27px;
-  box-sizing: border-box;
 }
 
 .title {
@@ -26,17 +34,49 @@ body {
 }
 
 .subtitle {
-  font-size: 16px;
   color: #61656D;
+  font-size: 16px;
   font-weight: 400;
   margin-top: 5px;
   margin-bottom: 14px;
 }
 
+.card-box-wrapper {
+  display: flex;
+  margin-top: 10px;
+}
+
 .card-box {
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 9px;
+  border-radius: 5px;
   width: 118px;
   height: 85px;
+}
+
+.card-box-creator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #F0F0F0;
+  width: 238px;
+  height: 85px;
+}
+
+.info-align {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px
+}
+
+.icon-stlye {
+  margin-bottom: 4px; 
+  width: 20px;
+  height: 20px;
 }
 
 .card-title {
@@ -46,9 +86,91 @@ body {
   font-size: 14px;
 }
 
+.card-title:last-child {
+  text-transform: lowercase;
+}
+
 .card-info {
   color: #FF6A28;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.card-info:first-child {
+  text-transform: none;
+}
+
+/* Segundo Container */
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+.ingredients-preparation-title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.ingredients-preparation-title {
+  color: #FF6A28;
+  font-size: 20px;
+  margin-left: 9px;
+  text-transform: uppercase;
+}
+
+.list {
+  padding: 0 0 27px 30px;
+}
+
+/* Terceiro container */
+.preparation-container {
+  height: 405px;
+  margin-top: 16px;
+}
+
+.list-item {
+  color: #61656D;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.preparation-item {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.add-info-container {
+  background-color: #FFFFFF;
+  margin-top: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.secundary-title {
+  background-color: #F0F0F0;
+  color: #61656D;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.add-info-text {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  padding-left: 22px;
+}
+
+.add-info-text p {
+  color: #61656D;
+  font-size: 14px;
+  font-weight: 400;
+}
+
